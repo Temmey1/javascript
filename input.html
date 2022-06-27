@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="input.css">
+</head>
+<body>
+    <div class="screen" id='display'>
+
+    </div>
+    
+
+    <div class='div'>
+        <label for="text"> Display:</label>
+        <input type="text" id= "text">
+        <button>Enter</button>
+
+    </div>
+
+
+    <script>
+     let  inputbox = document.getElementById('text')
+     let  display = document.getElementById('display')
+     let button = document.querySelector('button')
+
+     button.addEventListener('click', (e) => {
+        let x = inputbox.value;
+        let p = document.createElement('p');
+        p.innerHTML = x;
+
+        if(inputbox.value ==="") {
+            alert('Fill the Empty Box');
+        }
+        else {
+            display.appendChild(p);
+        }
+        inputbox.value = ""
+
+     });
+
+
+    </script>
+    
+</body>
+</html>

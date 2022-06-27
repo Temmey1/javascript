@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#loop {
+    /* background-color: rgb(206, 9, 85); */
+    color: ;
+    padding: 0.4rem 25%;
+    margin-top: 10%;
+}
+ .red {
+    background: black;
+    width: 70px;
+    height: 30px;
+} 
+.val0, .val5, .val3, .val8{
+    color: red;
+    border: 1px solid green;
+    padding :1rem 1rem;
+}
